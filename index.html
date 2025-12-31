@@ -27,6 +27,7 @@
     }
     a{color:inherit}
     .wrap{max-width:1080px;margin:0 auto;padding:18px}
+
     .banner{
       width:100%;
       border-radius:18px;
@@ -35,6 +36,7 @@
       background:#000;
     }
     .banner img{width:100%;height:auto;display:block}
+
     .top{
       display:grid;
       grid-template-columns: 110px 1fr;
@@ -49,8 +51,10 @@
       background:#000;
     }
     .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+
     h1{margin:0;font-size:34px;letter-spacing:.3px}
     .tagline{margin:6px 0 0;color:var(--muted)}
+
     .pillrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
     .pill{
       display:inline-flex;align-items:center;gap:8px;
@@ -61,8 +65,10 @@
       font-weight:600;
     }
     .pill:hover{border-color:rgba(122,167,255,.45)}
+
     .section{margin-top:28px}
     .section h2{margin:0 0 10px;font-size:20px}
+
     .bio{
       color:var(--muted);
       background:rgba(255,255,255,.04);
@@ -86,6 +92,7 @@
       display:block;
     }
     .card:hover{border-color:rgba(122,167,255,.45)}
+
     .cover{
       width:100%;
       aspect-ratio: 1 / 1;
@@ -116,7 +123,21 @@
     }
     .linkbtn span{color:var(--muted);font-weight:600}
     .linkbtn:hover{border-color:rgba(122,167,255,.45)}
-    footer{color:var(--muted);margin:26px 0 10px;font-size:13px}
+
+    footer{
+      color:var(--muted);
+      margin:26px 0 10px;
+      font-size:13px;
+      text-align:center;
+    }
+    footer a{
+      color:var(--accent);
+      text-decoration:none;
+      font-weight:700;
+    }
+    footer a:hover{
+      text-decoration:underline;
+    }
   </style>
 </head>
 
@@ -124,13 +145,13 @@
   <div class="wrap">
     <!-- Banner -->
     <div class="banner">
-      <img src="Banner.png" alt="ShadoFaith banner" />
+      <img src="images/Banner.png" alt="ShadoFaith banner" />
     </div>
 
     <!-- Header -->
     <div class="top">
       <div class="avatar">
-        <img src="Profile.png" alt="ShadoFaith profile" />
+        <img src="images/Profile.png" alt="ShadoFaith profile" />
       </div>
       <div>
         <h1>ShadoFaith</h1>
@@ -163,7 +184,7 @@
       <h2>Out Now</h2>
       <div class="grid">
         <a class="card" href="https://open.spotify.com/artist/60szr2pGL40IJLPAWBsYzd" target="_blank" rel="noopener">
-          <img class="cover" src="Testimony.png" alt="Testimony cover" />
+          <img class="cover" src="images/Testimony.png" alt="Testimony cover" />
           <div class="meta">
             <div class="title">Testimony</div>
             <div class="subtitle">Available on streaming platforms</div>
@@ -171,7 +192,7 @@
         </a>
 
         <a class="card" href="https://open.spotify.com/artist/60szr2pGL40IJLPAWBsYzd" target="_blank" rel="noopener">
-          <img class="cover" src="Holy EDM, Vol. 1.png" alt="Holy EDM Vol. 1 cover" />
+          <img class="cover" src="images/Holy EDM, Vol. 1.png" alt="Holy EDM Vol. 1 cover" />
           <div class="meta">
             <div class="title">Holy EDM, Vol. 1</div>
             <div class="subtitle">Available on streaming platforms</div>
@@ -179,7 +200,7 @@
         </a>
 
         <a class="card" href="https://open.spotify.com/artist/60szr2pGL40IJLPAWBsYzd" target="_blank" rel="noopener">
-          <img class="cover" src="Holy Worship.png" alt="Holy Worship cover" />
+          <img class="cover" src="images/Holy Worship.png" alt="Holy Worship cover" />
           <div class="meta">
             <div class="title">Holy Worship</div>
             <div class="subtitle">Available on streaming platforms</div>
@@ -193,7 +214,7 @@
       <h2>Coming Next Year</h2>
       <div class="grid">
         <div class="card">
-          <img class="cover" src="Armored Up.png" alt="Armored Up cover" />
+          <img class="cover" src="images/Armored Up.png" alt="Armored Up cover" />
           <div class="meta">
             <div class="title">Armored Up</div>
             <div class="subtitle">Coming next year</div>
@@ -201,7 +222,7 @@
         </div>
 
         <div class="card">
-          <img class="cover" src="Holy EDM, Vol. 2.png" alt="Holy EDM Vol. 2 cover" />
+          <img class="cover" src="images/Holy EDM, Vol. 2.png" alt="Holy EDM Vol. 2 cover" />
           <div class="meta">
             <div class="title">Holy EDM, Vol. 2</div>
             <div class="subtitle">Coming next year</div>
@@ -209,7 +230,7 @@
         </div>
 
         <div class="card">
-          <img class="cover" src="Not By Myself.png" alt="Not By Myself cover" />
+          <img class="cover" src="images/Not By Myself.png" alt="Not By Myself cover" />
           <div class="meta">
             <div class="title">Not By Myself</div>
             <div class="subtitle">Coming next year</div>
@@ -232,12 +253,10 @@
 
     <footer>
       © <span id="y"></span> ShadoFaith. All rights reserved.
-    </footer>
-  </div>
+      <br />
+      Contact:
+      <a href="mailto:cbmobilemail@gmail.com">cbmobilemail@gmail.com</a>
+      &nbsp;|&nbsp;
+      <a href="https://www.youtube.com/@shadofaith"
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
 
